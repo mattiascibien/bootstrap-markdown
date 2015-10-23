@@ -4,7 +4,7 @@
   "version": "2.9.0",
   "description": "A bootstrap plugin for markdown editing",
   "license" : "Apache-2.0",
-  "homepage": "https://github.com/toopay/bootstrap-markdown",
+  "homepage": "https://github.com/mattiascibien/bootstrap-markdown",
   "keywords": [
     "twitter",
     "bootstrap",
@@ -12,11 +12,11 @@
     "editor"
   ],
   "maintainers": [{
-    "name": "Taufan Aditya",
-    "web": "https://github.com/toopay"
+    "name": "Mattias Cibien",
+    "web": "https://github.com/mattiascibien"
   }],
   "repository": {
     "type": "git",
-    "url": "https://github.com/toopay/bootstrap-markdown.git"
+    "url": "https://github.com/mattiascibien/bootstrap-markdown.git"
   }
 }

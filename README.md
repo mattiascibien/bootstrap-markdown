@@ -9,6 +9,12 @@ Markdown editing meet Bootstrap.
 
 Demo and documentation on [http://toopay.github.io/bootstrap-markdown/](http://toopay.github.io/bootstrap-markdown/)
 
+### CHANGES
+
+* Support for bootstrap v4
+* Moving to SASS
+* Use of font-awesome by default
+
 ### LICENSE
 
 > Copyright 2013-2014 Taufan Aditya

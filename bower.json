@@ -1,9 +1,10 @@
 {
-  "name": "bootstrap-markdown",
-  "version": "2.9.0",
-  "main": ["./js/bootstrap-markdown.js", "./css/bootstrap-markdown.min.css"],
+  "name": "mc-bootstrap-markdown",
+  "version": "3.0.0",
+  "main": ["./js/bootstrap-markdown.js", "./css/bootstrap-markdown.min.css", "./sass/bootstrap-markdown.scss"],
   "dependencies": {
-    "bootstrap": "~3"
+    "bootstrap": "~4.0.0-alpha",
+    "font-awesome": "~4.4.0"
   },
   "devDependencies": {
   	"markdown":"~0.4.0"

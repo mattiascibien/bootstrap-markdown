@@ -1,18 +1,19 @@
 /**
- * Bootstrap-Markdown.less
+ * Bootstrap-Markdown.scss
  *
  * @author Taufan Aditya @taufanaditya
  * @copyright 2013-2015 Taufan Aditya
+ * @copyright 2013-2015 Mattias Cibien
  */
 
 .md-editor {
   display: block;
-  border: 1px solid @table-border-color;
+  border: 1px solid $table-border-color;
 
   > .md-header, .md-footer {
     display: block;
     padding: 6px 4px;
-    background: @panel-default-heading-bg;
+    background: $card-cap-bg;
   }
 
   > .md-header {
@@ -20,16 +21,16 @@
   }
 
   > .md-preview {
-    background: @panel-bg;
-    border-top: 1px dashed @table-border-color;
-    border-bottom: 1px dashed @table-border-color;
+    background: $card-bg;
+    border-top: 1px dashed $table-border-color;
+    border-bottom: 1px dashed $table-border-color;
     min-height: 10px;
     overflow: auto;
   }
 
   > textarea {
-    font-family: @font-family-monospace;
-    font-size: @font-size-base;
+    font-family: $font-family-monospace;
+    font-size: $font-size-base;
     outline: 0;
     outline: thin dotted  \9; /* IE6-9 */
     margin: 0;
@@ -37,24 +38,24 @@
     padding: 0;
     width: 100%;
     border: 0;
-    border-top: 1px dashed @table-border-color;
-    border-bottom: 1px dashed @table-border-color;
+    border-top: 1px dashed $table-border-color;
+    border-bottom: 1px dashed $table-border-color;
     border-radius: 0;
     box-shadow: none;
-    background: @input-bg-disabled;
-    &:focus {
+    background: $input-bg-disabled;
+    :focus {
       box-shadow: none;
-      background: @input-bg;
+      background: $input-bg;
     }
   }
 
   // Hover state
-  @color: @input-border-focus;
-  @color-rgba: rgba(red(@color), green(@color), blue(@color), .6);
-  &.active {
-    border-color: @color;
+  $color: $input-border-focus;
+  $color-rgba: rgba(red($color), green($color), blue($color), .6);
+  .active {
+    border-color: $color;
     outline: 0;
-    .box-shadow(~"inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px @{color-rgba}");
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px $color-rgba;
   }
 
   .md-controls {
@@ -65,14 +66,14 @@
       right: 5px;
       color: #bebebe;
       padding: 3px 3px 3px 10px;
-      &:hover {
+      :hover {
         color: #333;
       }
     }
   }
 
   // fullscreen mode styles
-  &.md-fullscreen-mode {
+  .md-fullscreen-mode {
     width: 100%;
     height: 100%;
     position: fixed;
@@ -107,8 +108,8 @@
     }
 
     .md-input {
-      &:hover,
-      &:focus {
+      :hover,
+      :focus {
         color: #333;
         background: #fff !important;
       }
@@ -131,10 +132,10 @@
       background: none;
       color: #b3b3b3;
 
-      &:hover,
-      &:focus,
-      &.active,
-      &:active {
+      :hover,
+      :focus,
+      .active,
+      :active {
         box-shadow: none;
         color: #333;
       }
@@ -155,7 +156,7 @@
         height: 30px;
         text-align: center;
 
-        &:hover {
+        :hover {
           color: #333;
           text-decoration: none;
         }
@@ -171,6 +172,7 @@
   .md-fullscreen-controls {
     display: none;
   }
+  
 }
 
 .md-nooverflow {
