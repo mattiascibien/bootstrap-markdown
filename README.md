@@ -4,6 +4,7 @@ Markdown editing meet Bootstrap.
 
 | Version | Compatibility with Bootstrap |
 | :---: | :---: |
+| Bootstrap Markdown v3.x | **only** compatible with Bootstrap 4.x |
 | Bootstrap Markdown v2.x | **only** compatible with Bootstrap 3.x |
 | Bootstrap Markdown v1.x | **only** compatible with Bootstrap 2.x |
 
@@ -14,6 +15,7 @@ Demo and documentation on [http://toopay.github.io/bootstrap-markdown/](http://t
 * Support for bootstrap v4
 * Moving to SASS
 * Use of font-awesome by default
+* Italian translation
 
 ### LICENSE
 
